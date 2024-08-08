@@ -31,7 +31,7 @@ compile_metadata <- function(gh_data, cran_data = NULL, description_contents = N
     license <- cran_data$license
     authors <- paste(unlist(cran_data$author), collapse = ", ")
     maintainer <- cran_data$maintainer
-    date_published <- cran_data[["date/publication"]]
+    date_published <- cran_data$date_published
   }
   ret <- list(name = gh_data$name,
               title = title,
